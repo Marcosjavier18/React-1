@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 
+function EstadoAHijo(props) {
+  return (
+    <div>
+      <h3>{props.contadorHijo}</h3>
+    </div>
+  );
+}
+
 export default class Estado extends Component {
   constructor(props) {
     super(props);
@@ -7,17 +15,21 @@ export default class Estado extends Component {
       contador: 0,
     };
 
-    setInterval(() => {
+    /* setInterval(() => {
+      // Esta forma esta mal porque se va actualizando el estado constantemente
+      // this.state.contador += 1;
+
       this.setState({
         contador: this.state.contador + 1,
       });
-    }, 1000);
+    }, 1000); */
   }
   render() {
     return (
       <div>
         <h2>El State</h2>
         <p>{this.state.contador}</p>
+        <EstadoAHijo contadorHijo={this.state.contador}></EstadoAHijo>
       </div>
     );
   }
