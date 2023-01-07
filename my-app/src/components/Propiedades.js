@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Propiedades(props) {
   return (
@@ -23,5 +24,5 @@ Propiedades.defaultProps = {
 };
 
 Propiedades.propTypes = {
-  numero: 
-}
+  numero: PropTypes.number.isRequired
+};

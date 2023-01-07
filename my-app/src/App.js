@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
+import Estados from "./components/Estados";
 
 function App() {
   return (
@@ -39,6 +40,10 @@ function App() {
           ></Propiedades>
           <br></br>
           <br></br>
+          <hr></hr>
+
+          <Estados />
+
           <br></br>
         </section>
       </header>
