@@ -82,9 +82,15 @@ export class EventosES7 extends Component {
   }
 }
 
-function Boton(props) {
-  return <button onClick={props.myOnClick}>Boton hecho componente</button>;
-}
+// Codigo bien, pero lo vamos hacer mas limpio con una const.
+// function Boton(props) {
+//   return <button onClick={props.myOnClick}>Boton hecho componente</button>;
+// }
+
+// Forma mas eficaz del codigo.
+const Boton = (props) => (
+  <button onClick={props.myOnClick}>Boton hecho componente</button>
+);
 
 // Mas sobre eventos. video 11
 
