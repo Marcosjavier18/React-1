@@ -88,8 +88,8 @@ export class EventosES7 extends Component {
 // }
 
 // Forma mas eficaz del codigo.
-const Boton = (props) => (
-  <button onClick={props.myOnClick}>Boton hecho componente</button>
+const Boton = ({ myOnClick }) => (
+  <button onClick={myOnClick}>Boton hecho componente</button>
 );
 
 // Mas sobre eventos. video 11
